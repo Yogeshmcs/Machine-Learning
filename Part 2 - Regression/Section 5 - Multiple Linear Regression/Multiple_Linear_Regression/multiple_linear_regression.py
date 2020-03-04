@@ -7,8 +7,8 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('50_Startups.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 4].values
+X = dataset.iloc[:, :-1].values #features
+y = dataset.iloc[:, 4].values # depe variables
 
 # Encoding categorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
